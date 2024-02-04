@@ -1,0 +1,53 @@
+<html>
+    <header>
+        <title>Minesweeper</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1">
+        <link rel="stylesheet" href="index.css">
+        <script src="minesweeper.js"></script>
+    </header>
+    <body>
+        <div class="game-container">
+            <div class="title">
+                <h1>Minesweeper</h1>
+            </div>
+            <div class="game">
+                <div class="game-menu">
+                    <div class="counter" id="timer">
+                        00:00
+                    </div>
+                    <div id="state">
+                        Left-click board<br> to start the game.
+                    </div>
+                    <div id="help">
+                        <div class="tutorial-button" onclick="tutorial()">Controls</div>
+                        <span class="tutorial-text" id="tutorial">
+                            <p>Left-click: reveal square</p>
+                            <p>Right-click: put/delete flag</p>
+                            <p>Left-click on revealed square: reveal adjacent squares</p>
+                        </span>
+                    </div>
+                </div>
+                <div id="board" oncontextmenu="return false;">
+                </div>
+                <div class="game-menu under">
+                    <div class="counter" id="bombs">
+                        000
+                    </div>
+                    <div class="game-mode">
+                        <input name="difficulty" type="radio" id="easy" class="difficulty" value="1">
+                        <label for="easy">Easy</label>
+                        <input name="difficulty" type="radio" id="medium" class="difficulty" value="2" checked>
+                        <label for="medium">Medium</label>
+                        <input name="difficulty" type="radio" id="hard" class="difficulty" value="3">
+                        <label for="hard">Hard</label>
+                    </div>
+                    <div class="retry" onClick="newGame()">New Game</div>
+                </div>
+            </div>
+        </div>
+        <div class="small-device">
+            Use a wider screen.
+        </div>
+    </body>
+</html>

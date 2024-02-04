@@ -1,3 +1,3 @@
-# H1 MINESWEEPER
+# MINESWEEPER
 
 Simple implementation of the famouse game Minesweeper

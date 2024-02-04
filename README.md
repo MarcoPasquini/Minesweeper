@@ -1,2 +1,3 @@
-#MINESWEEPER
-#Simple implementation of the famouse game Minesweeper
+MINESWEEPER
+
+Simple implementation of the famouse game Minesweeper
